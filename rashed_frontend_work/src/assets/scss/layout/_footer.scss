@@ -1,0 +1,74 @@
+/* ================ footer style ================== */
+
+footer {
+    .footer-top {
+        background-image: url('../img/footer-bg.jpg');
+        font-size: .90rem;
+        padding: 3rem;
+        .footer-widget {
+            h4 {
+                color: $footer-text-color;
+                font-size: 1.03rem;
+                text-transform: uppercase;
+                position: relative;
+                display: inline-block;
+                padding-bottom: 0.75rem;
+                &:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    content: '';
+                    background-color: $white-background;
+                }
+            }
+            ul {
+                li {
+                    color: $footer-text-color;
+                    margin-bottom: 0.5rem;
+                    i {
+                        padding-right: 0.25rem;
+                    }
+                    a {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .payment-image {
+                margin: 1rem 0;
+            }
+            .social-links {
+                margin-top: 0.5rem;
+                i {
+                    font-size: 1.3rem;
+                    margin-right: 0.5rem;
+                }
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .copyright-info{
+        background-color: $primary-color;
+        color: $footer-text-color;
+        font-weight: $link-font-weight;
+        padding: 0.5rem 0;
+        font-size: .75rem;
+
+        .credit-text{
+            text-align: right;
+            @include media-breakpoint-down(md){
+                text-align: center
+            }
+        }
+
+        @include media-breakpoint-down(md){
+            text-align: center
+        }
+    }
+
+
+}
